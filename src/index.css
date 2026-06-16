@@ -1,20 +1,12 @@
-@import "tailwindcss";
-
-@theme {
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
-  
-  /* Paleta Gold real Premium (#bb8b35) de Alta Performance */
-  --color-gold: #bb8b35;
-  --color-gold-dark: #936b25;
-  --color-gold-light: #e0bd7e;
-  --color-charcoal: #111111;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
   body {
     background-color: #000000;
     color: #ffffff;
-    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
   }
 }
