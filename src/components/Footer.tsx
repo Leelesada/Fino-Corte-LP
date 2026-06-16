@@ -10,9 +10,11 @@ export default function Footer() {
   };
 
   return (
-
-        {/* Centro: Endereço Correto */}
-        <div className="text-center">
+    <footer className="bg-black py-8 border-t border-gold/20">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        
+        {/* Centro: Endereço */}
+        <div className="text-center md:text-left">
           <p className="text-zinc-400 text-xs font-sans tracking-wider">
             Rua São José, 196 - Centro, Gaspar/SC <br />
           </p>
