@@ -30,12 +30,9 @@ export default function Hero() {
 
   return (
     <section className="relative overflow-hidden pt-4 pb-16 md:pb-24 flex flex-col items-center justify-center px-4 max-w-5xl mx-auto">
-      {/* Luz ambiente dourada de fundo */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-4/5 h-96 bg-[radial-gradient(circle_at_center,_rgba(187,139,53,0.08)_0%,_transparent_70%)] pointer-events-none -z-10" />
 
       <div className="w-full mx-auto text-center flex flex-col items-center">
-        
-        {/* Parágrafo de SEO Local com destaques precisos solicitados */}
         <motion.p 
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,7 +43,6 @@ export default function Hero() {
           A <span className="text-gold font-bold">Fino Corte</span> oferece aviamentos em geral, tecidos e acessórios para costura e confecção. Contamos com <span className="text-gold font-bold">atendimento especializado</span> e estilista na loja no centro de Gaspar/SC para ajudar você a encontrar as melhores soluções para seus projetos de moda e artesanato.
         </motion.p>
 
-        {/* Botões de Ação Direta (Transição de 0.3s que preenche o botão com a cor dourada) */}
         <div className="w-full max-w-2xl space-y-4 mb-16" id="contact-buttons-container">
           {contactButtons.map((btn, idx) => (
             <motion.a
@@ -73,7 +69,6 @@ export default function Hero() {
                   </span>
                 </div>
               </div>
-              
               <div className="flex items-center gap-1.5 shrink-0">
                 {btn.badge && (
                   <span className="hidden sm:inline-block text-[9px] font-semibold tracking-wider bg-gold/10 group-hover:bg-black/10 border border-gold/30 group-hover:border-black/25 px-2 py-0.5 rounded mr-1">
@@ -86,7 +81,6 @@ export default function Hero() {
           ))}
         </div>
 
-        {/* Seção de Informações de Visita mantida */}
         <motion.div 
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
@@ -102,8 +96,6 @@ export default function Hero() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-stone-300 text-sm leading-relaxed">
-            
-            {/* Coluna Horários / Telefones */}
             <div className="space-y-3">
               <div className="flex gap-3 items-start">
                 <Clock className="w-5 h-5 text-gold shrink-0 mt-0.5" />
@@ -113,8 +105,7 @@ export default function Hero() {
                   </span>
                   <span className="font-sans block mt-1 text-sm text-stone-200">
                     Segunda a Sexta: <strong className="text-white font-medium">08:30 às 18:00</strong><br />
-<span className="text-xs text-zinc-400 italic block mt-1">
-(fechamos para almoço)
+                    <span className="text-xs text-zinc-400 italic block mt-1">(fechamos para almoço)</span>
                     Sábados: <strong className="text-white font-medium">08:30 às 12:00</strong>
                   </span>
                 </div>
@@ -126,17 +117,13 @@ export default function Hero() {
                   <span className="font-bold text-xs uppercase tracking-wider text-zinc-400 block font-sans">
                     Telefone Integrado
                   </span>
-                  <a 
-                    href="tel:+554730182555" 
-                    className="font-sans block mt-1 text-sm text-gold hover:underline transition-all duration-200"
-                  >
+                  <a href="tel:+554730182555" className="font-sans block mt-1 text-sm text-gold hover:underline transition-all duration-200">
                     (47) 3018-2555
                   </a>
                 </div>
               </div>
             </div>
 
-            {/* Coluna Endereço */}
             <div className="space-y-3">
               <div className="flex gap-3 items-start">
                 <MapPin className="w-5 h-5 text-gold shrink-0 mt-0.5" />
@@ -146,15 +133,13 @@ export default function Hero() {
                   </span>
                   <span className="font-sans block mt-1 text-sm text-stone-200">
                     Rua São José, 196 - Centro<br />
-                    Gaspar / SC — CEP 89110-010<br />
-                    </span>
+                    Gaspar / SC — CEP 89110-010
                   </span>
                 </div>
               </div>
-
+            </div>
           </div>
         </motion.div>
-
       </div>
     </section>
   );
