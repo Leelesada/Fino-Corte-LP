@@ -9,7 +9,7 @@ export default function Hero() {
   ];
 
   return (
-    <section style={{ maxWidth: '400px', margin: '0 auto 40px auto', padding: '0 20px', textAlign: 'center' }}>
+    <section style={{ maxWidth: '400px', width: '100%', margin: '0 auto 40px auto', padding: '0 20px', textAlign: 'center' }} className="md:max-w-2xl">
       <p style={{ fontSize: '0.95rem', marginBottom: '30px', lineHeight: '1.6', color: '#e5e7eb' }}>
         A <span style={{ color: '#bb8b35', fontWeight: 'bold' }}>Fino Corte</span> oferece aviamentos em geral, tecidos e acessórios para costura e confecção. 
         Contamos com <span style={{ color: '#bb8b35' }}>atendimento especializado</span> e estilista na loja para ajudar você a encontrar as melhores soluções para seus projetos de moda e artesanato.
