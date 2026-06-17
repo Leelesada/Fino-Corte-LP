@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/Logo-perfil.png";
+import logo from "../assets/images/Logo-perfil.png";
 
 export default function Hero() {
   const buttons = [
