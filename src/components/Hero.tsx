@@ -1,5 +1,6 @@
 import React from "react";
 import { MessageCircle, Instagram, MapPin } from "lucide-react";
+import logo from "../assets/logo.png"; // Ajuste o nome "logo.png" se for outro nome
 
 export default function Hero() {
   const buttons = [
@@ -9,9 +10,16 @@ export default function Hero() {
   ];
 
   return (
-    <section style={{ maxWidth: '450px', margin: '40px auto', padding: '0 20px', textAlign: 'center' }}>
+    <section style={{ maxWidth: '400px', margin: '20px auto', padding: '0 20px', textAlign: 'center' }}>
       
-      <p style={{ fontSize: '1rem', marginBottom: '40px', lineHeight: '1.6', color: '#e5e7eb', fontWeight: '300' }}>
+      {/* Logo importada corretamente */}
+      <img 
+        src={logo} 
+        alt="Fino Corte Tecidos" 
+        style={{ width: '200px', margin: '0 auto 20px auto', display: 'block' }} 
+      />
+
+      <p style={{ fontSize: '0.95rem', marginBottom: '30px', lineHeight: '1.6', color: '#e5e7eb', fontWeight: '300' }}>
         A <span style={{ color: '#bb8b35', fontWeight: '700' }}>Fino Corte</span> oferece aviamentos em geral, tecidos e acessórios para costura e confecção. 
         Contamos com <span style={{ color: '#bb8b35' }}>atendimento especializado</span> e estilista na loja para ajudar você a encontrar as melhores soluções para seus projetos de moda e artesanato.
       </p>
