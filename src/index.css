@@ -1,12 +1,26 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-@layer base {
-  body {
-    background-color: #000000;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-  }
+.btn-dourado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border: 2px solid #bb8b35;
+  color: #bb8b35;
+  text-decoration: none;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-dourado:hover {
+  background-color: #bb8b35;
+  color: #000000;
 }
