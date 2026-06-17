@@ -5,7 +5,7 @@ export default function Hero() {
   const buttons = [
     { label: "WhatsApp", sub: "(47) 3018-2555", icon: <MessageCircle size={20}/>, url: "https://wa.me/554730182555" },
     { label: "Instagram", sub: "@finocortetecidos_", icon: <Instagram size={20}/>, url: "https://www.instagram.com/finocortetecidos_/" },
-    { label: "Localização", sub: "Rua São José, 196 - Centro", icon: <MapPin size={20}/>, url: "https://maps.app.goo.gl/M2bHodXHxtWfikmp8" }
+    { label: "Localização", sub: "Rua São José, 196 -sl 04 - Centro", icon: <MapPin size={20}/>, url: "https://maps.app.goo.gl/M2bHodXHxtWfikmp8" }
   ];
 
   return (
